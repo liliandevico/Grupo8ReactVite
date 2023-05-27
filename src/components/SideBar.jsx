@@ -1,4 +1,4 @@
-import image from '../assets/images/logo-DH.png';
+import image from '../assets/images/logo-sin-fondo-1-blanco-FD.png';
 import ContentWrapper from './ContentWrapper.jsx';
 import GenresInDb from './GenresInDb.jsx';
 import LastMovieInDb from './LastMovieInDb.jsx';
@@ -14,63 +14,71 @@ function SideBar(){
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
+                {/* <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
+                    <div className="sidebar-brand-icon">
+                        <img className="w-100" src={image} alt="Digital House"/>
+                    </div>
+                </Link> */}
+
+                {/*<!-- Divider -->*/}
+                {/* <hr className="sidebar-divider my-0"/> */}
+
+                {/*<!-- Nav Item - Dashboard -->*/}
+                <li className="nav-item active">
+                    <Link className="nav-link" to="/">
+                        <i className="fas fa-fw fa-tachometer-alt"></i>
+                        <h1> Dashboard </h1>
+                    </Link>
+                </li>
+
+                {/*<!-- Divider -->*/}
+                {/* <hr className="sidebar-divider"/> */}
+
+                {/*<!-- Heading -->*/}
+                {/* <div className="sidebar-heading">Actions</div> */}
+                <br />
+                <br />
+                
                 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                     <div className="sidebar-brand-icon">
                         <img className="w-100" src={image} alt="Digital House"/>
                     </div>
                 </Link>
 
-                {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider my-0"/>
-
-                {/*<!-- Nav Item - Dashboard -->*/}
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/">
-                        <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span>
-                    </Link>
-                </li>
-
-                {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider"/>
-
-                {/*<!-- Heading -->*/}
-                <div className="sidebar-heading">Actions</div>
-
                 {/*<!-- Nav Item - Pages -->*/}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link collapsed" to="/">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Pages</span>
                     </Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Nav Item - Charts -->*/}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Charts</span>
                     </Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Nav Item - Tables -->*/}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span>
                     </Link>
-                </li>
+                </li> */}
                 
                 {/*<!-- Buscador -->*/}
-                <li className="nav-item nav-link">
+                {/* <li className="nav-item nav-link">
                     <Link className="nav-link" to="/SearchMovies">
                         <i className="fas fa-search"></i>
                         <span>Search a movie</span>
                     </Link>
-                </li>
+                </li> */}
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider d-none d-md-block"/>
+                {/* <hr className="sidebar-divider d-none d-md-block"/> */}
             </ul>
             {/*<!-- End Microdesafio 2 -->*/}
             <Routes>
